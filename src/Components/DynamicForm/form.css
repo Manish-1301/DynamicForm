@@ -1,3 +1,29 @@
+.DynamicForm{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:5rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+}
+.DynamicForm:not(:last-child){
+    margin-bottom: 1rem;
+}
+.button{
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
 .input:focus:invalid{
     outline: 1px solid red;
+}
+.form__input{
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 2rem;
+}
+.form__label{
+    margin-right: 1rem;
+    grid-column: 1/2;
 }

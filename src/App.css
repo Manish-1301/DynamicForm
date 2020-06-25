@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}

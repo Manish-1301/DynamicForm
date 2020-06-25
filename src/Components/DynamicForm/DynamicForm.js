@@ -1,5 +1,6 @@
 import React from 'react';
-import './form.css'
+import './form.css';
+import regex from 'regex'; 
 
 class DynamicForm extends React.Component{
     constructor(props){
@@ -260,8 +261,8 @@ class DynamicForm extends React.Component{
                 }
             }
             return (
-                <div key = {"g" + key}  >
-                    <label>{label}</label>
+                <div key = {"g" + key} className="form__input" >
+                    <label className="form__label">{label}</label>
                     {input}
                 </div>
             );
@@ -270,10 +271,10 @@ class DynamicForm extends React.Component{
     }
     render(){
         return (
-            <div>
+            <div className="DynamicForm">
                 {this.renderForm()}
-                <div>
-                    <button onSubmit={this.onButtonSubmit}>Submit</button>
+                <div >
+                    <button className= "button" onSubmit={this.onButtonSubmit}>Submit</button>
                 </div>
             </div>
         );
